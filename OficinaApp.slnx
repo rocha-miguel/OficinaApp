@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/1 - API/">
+    <Project Path="OficinaApp.API/OficinaApp.API.csproj" />
+  </Folder>
+  <Folder Name="/2 - DOMAIN/">
+    <Project Path="OficinaApp.Domain/OficinaApp.Domain.csproj" />
+  </Folder>
+  <Folder Name="/3 - INFRASTRUCTURE/">
+    <Project Path="OficinaApp.Infra.Data/OficinaApp.Infra.Data.csproj" />
+  </Folder>
+  <Folder Name="/4 - APPLICATION/">
+    <Project Path="OficinaApp.Application/OficinaApp.Application.csproj" />
+  </Folder>
+</Solution>
