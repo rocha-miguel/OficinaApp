@@ -5,11 +5,11 @@ using OficinaApp.Domain.Entities;
 namespace OficinaApp.Domain.Interfaces.Repositories {
     public interface IClienteRepository : IBaseRepository<Cliente> {
 
-        Task<Cliente?> ExibirPorDocumento(string documento);
+        Task<Cliente?> ExibirPorDocumentoAsync(string documento);
 
-        Task<bool> ExisteDocumento(string documento);
+        Task<bool> ExisteDocumentoAsync(string documento);
 
-        Task<bool> ExisteEmail(string email);
+        Task<bool> ExisteEmailAsync(string email);
 
     }
 }

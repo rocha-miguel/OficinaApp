@@ -6,16 +6,16 @@ using OficinaApp.Domain.Enums;
 namespace OficinaApp.Domain.Interfaces.Repositories {
     public interface IBaseRepository<T> where T : BaseEntity {
 
-        Task Criar(T obj);
+        Task CriarAsync(T obj);
 
-        Task Atualizar(Guid id, T obj);
+        Task AtualizarAsync(Guid id, T obj);
 
-        Task Excluir(Guid id);
+        Task ExcluirAsync(Guid id);
 
-        Task<IEnumerable<T>> ExibirTodos(int pageNumber, int pageSize);
+        Task<IEnumerable<T>> ExibirTodosAsync(int pageNumber, int pageSize);
 
-        Task<T?> ExibirPorId(Guid id);
+        Task<T?> ExibirPorIdAsync(Guid id);
 
-        Task<IEnumerable<T>> ExibirPorStatus(int pageNumber, int pageSize, Status status);
+        Task<IEnumerable<T>> ExibirPorStatusAsync(int pageNumber, int pageSize, Status status);
     }
 }

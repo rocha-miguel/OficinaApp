@@ -5,11 +5,11 @@ using OficinaApp.Domain.Entities;
 namespace OficinaApp.Domain.Interfaces.Repositories {
     public interface IVeiculoRepository : IBaseRepository<Veiculo> {
 
-        Task<Veiculo?> ExibirPorPlaca(string placa);
+        Task<Veiculo?> ExibirPorPlacaAsync(string placa);
 
-        Task<bool> ExistePlaca(string placa);
+        Task<bool> ExistePlacaAsync(string placa);
 
-        Task<IEnumerable<Veiculo>> ExibirPorClienteId(Guid clienteId, int pageNumber, int pageSize);
+        Task<IEnumerable<Veiculo>> ExibirPorClienteIdAsync(Guid clienteId, int pageNumber, int pageSize);
 
         
     }
