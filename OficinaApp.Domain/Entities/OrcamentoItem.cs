@@ -15,11 +15,5 @@ namespace OficinaApp.Domain.Entities {
 
         public decimal ValorUnitario { get; set; } = 0;
 
-        public decimal ValorTotal { get; set; }
-
-        public void CalcularValorTotal() {
-
-            ValorTotal = ValorUnitario * Quantidade;
-        }
     }
 }

@@ -6,7 +6,7 @@ namespace OficinaApp.Domain.Entities {
 
         public Guid Id { get; set; } = Guid.NewGuid();
 
-        public DateTime DataCadastro { get; set; } = DateTime.Now;
+        public DateTime DataCadastro { get; set; } = DateTime.UtcNow.AddHours(-3);
 
         public DateTime? DataExclusao { get; set; }
 

@@ -19,7 +19,7 @@ namespace OficinaApp.Domain.Entities {
 
         public DateTime? DataAprovacao { get; set; }
 
-        public List<OrcamentoItem> Servicos { get; set; }
+        public List<OrcamentoItem> Itens { get; set; } = [];
 
     }
 }
